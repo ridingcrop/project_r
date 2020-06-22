@@ -3,10 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Пример сайта</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
   </head>
   <body>
     <script src="script.js"></script>
+    <div class="container">
+      <div class="rows">
+        <div class="columns">
+          <div class="column" draggable="true" data-column-id="1">
+            <div class='column-header' contenteditable='true'>Планируется</div>
+            <div data-notes>
+              <div class="notes" draggable="true" data-notes-id="1">Do it</div>
+              <div class="notes" draggable="true" data-notes-id="2">Do it</div>
+              <div class="notes" draggable="true" data-notes-id="3">Do it</div>
+            </div>
+            <p class="column-footer">
+              <span data-action-addNote class="action">Добавить карточку</span>
+            </p>
+          </div>
+          <div class="column" draggable="true" data-column-id="2">
+            <div class='column-header' contenteditable='true'>Планируется</div>
+            <div data-notes>
+              <div class="notes" draggable="true" data-notes-id="4">Do it</div>
+              <div class="notes" draggable="true" data-notes-id="5">Do it</div>
+              <div class="notes" draggable="true" data-notes-id="6">Do it</div>
+            </div>
+            <p class="column-footer">
+              <span data-action-addNote class="action">Добавить карточку</span>
+            </p>
+          </div>
+          <div class="column" draggable="true" data-column-id="3">
+            <div class='column-header' contenteditable='true'>Планируется</div>
+            <div data-notes> </div>
+            <p class="column-footer">
+              <span data-action-addNote class="action">Добавить карточку</span>
+            </p>
+          </div>
+        </div>
+        <div class="adder">
+          <span data-action-addColumn class="action">Добавить колонку</span> 
+        </div>
+      </div>
+    </div>
   </body>
 </html>
